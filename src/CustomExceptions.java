@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 import model.entities.Reservation;
+import model.exceptions.DomainException;
 
 public class CustomExceptions {
   // throws ParseException pode lancar execeção, não precisa tratar ela e pode ser propagada 
@@ -34,8 +35,10 @@ public class CustomExceptions {
       System.out.println("Reservation: " + reservation);
     } catch (ParseException e) {
       System.out.println("Invalid date format");
-    } catch (IllegalArgumentException e) {
+    } catch (DomainException e) {
       System.out.println("Error in reservation: " + e.getMessage());
+    } catch (RuntimeException e) {
+      System.out.println("Unexpected error");
     }
   }
 }

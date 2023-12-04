@@ -46,3 +46,7 @@ try {
 
 # throws ParseException
 - metodo chamado pode lancar execeção e não precisa tratar ela, podendo propagar a execeção para quem chamar a função
+
+# Exception x RuntimeException
+- RuntimeException compilador não obriga a tratar (não precisa try catch)
+- Exception compilador obriga a tratar
