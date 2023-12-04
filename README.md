@@ -40,6 +40,9 @@ try {
 } catch (ExceptionType e) {
 
 } finally {
-  
+
 }
 ```
+
+# throws ParseException
+- metodo chamado pode lancar execeção e não precisa tratar ela, podendo propagar a execeção para quem chamar a função
