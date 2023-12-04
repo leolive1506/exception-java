@@ -50,3 +50,6 @@ try {
 # Exception x RuntimeException
 - RuntimeException compilador não obriga a tratar (não precisa try catch)
 - Exception compilador obriga a tratar
+
+# throw lança uma execeção
+# thwors propaga uma exceção ao invés de trata-la
